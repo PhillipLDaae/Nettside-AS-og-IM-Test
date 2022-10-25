@@ -319,96 +319,6 @@ nav {
     background-color: rgba(0,136,169,0.8);
 }
 
-/* kode til info om skolen */
-
-.school-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.asvgs-picture-textbox {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 1rem;
-    margin: 1rem;
-    width: 50%;
-}
-
-.asvg-picture {
-    width: 50%;
-}
-
-@media (max-width: 760px) {
-    .school-info {
-        flex-direction: column;
-    }
-
-    .asvgs-picture-textbox {
-        width: auto;
-    }
-
-    .asvg-picture {
-        width: 100%;
-    }
-}
-
-
-.asvgs-picture-textbox-headline {
-    padding: 1rem 0;
-}
-
-
-/* kode til linje info*/
-
-.linje-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.linje-textbox {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 1rem;
-    margin: 1rem;
-    width: 50%;
-}
-
-.linje-headline {
-    padding: 1rem 0;
-}
-
-.linje-picture {
-    width: 50%;
-}
-
-@media (max-width: 760px) {
-    .linje-info {
-        flex-direction: column;
-    }
-    .linje-picture {
-        width: 100%;
-        order: 1;
-    }
-    .linje-textbox {
-        order: 2;
-        width: auto;
-    }
-}
-
 /* standard look på content right/left */
 
 .content-right {
@@ -542,6 +452,24 @@ nav {
     visibility: hidden;
 }
 
+.about-school {
+    background-image: url(/Bilder/Amalie\ Skram\ VGS.jpg);
+}
+
+.about-school-hidden {
+    display: none;
+    visibility: none;
+}
+
+.eduprogram {
+    background-image: url(/Bilder/Amalie\ Skram\ VGS.jpg);
+}
+
+.eduprogram-hidden {
+    display: none;
+    visibility: hidden;
+}
+
 /* kode til hvordan bildene oppfører seg til hvert av elementene i mobilformat, igjen se klassenavn for referanse */
 
 @media (max-width: 600px) {
@@ -575,4 +503,27 @@ nav {
     .welcome {
         background-image: none;
     }
+    
+    .about-school-hidden {
+    display: block;
+    visibility: visible;
+    width: 100%;
+    }
+
+    .about-school {
+        background-image: none;
+    }
+
+    .eduprogram-hidden {
+        display: block;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .eduprogram {
+        background-image: none;
+    }
 }
+
+
+
