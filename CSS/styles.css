@@ -128,6 +128,10 @@ nav {
     color: rgb(0,136,169);
 }
 
+.active {
+    color: rgb(0,136,169);
+}
+
 /* kode til hjemknappen */
 
 .home {
@@ -259,7 +263,8 @@ nav {
     align-items: center;
     width: 30rem;
     color: whitesmoke;
-    background-color: rgba(20, 20, 20, 0.5);
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 25px;
 }
 
 .projects-headline {
@@ -357,7 +362,8 @@ nav {
     align-items: center;
     width: 30rem;
     color: black;
-    background-color: rgba(223, 223, 223, 0.7);
+    background-color: rgba(223, 223, 223, 0.8);
+    border-radius: 25px;
 }
 
 .content-right-headline {
@@ -391,7 +397,8 @@ nav {
     align-items: center;
     width: 30rem;
     color: black;
-    background-color: rgba(223, 223, 223, 0.7);
+    background-color: rgba(223, 223, 223, 0.8);
+    border-radius: 25px;
 }
 
 .content-left-headline {
@@ -545,3 +552,130 @@ nav {
 
 
 
+.prod_project1_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.prod_project1_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 25px;
+}
+
+.prod_project1_textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    color: whitesmoke;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+.prod_project1_head {
+    padding: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.prod_project1_text {
+    margin: 2rem;
+    font-size: 22px;
+}
+
+
+.prod_project1_ppbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margn: 2rem 0 0 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.prod_project1_pphead {
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 1rem 0 1rem 0;
+}
+
+.prod_project1_ppunder {
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 0 0 2rem 0;
+}
+
+.prod_project1_pp1 {
+    border: none;
+    max-width: 1235px;
+}
+
+.prod_project1_pp2 {
+    display: none;
+    visibility: hidden;
+}
+
+.prod_project1_pp3 {
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 1250px) {
+    .prod_project1_pp1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .prod_project1_pp2 {
+        display: block;
+        visibility: visible;
+        max-width: 980px;
+    }
+}
+
+@media (max-width: 980px) {
+    .prod_project1_pp2 {
+        display: none;
+        visibility: hidden; 
+    }
+
+    .prod_project1_info {
+        flex-direction: column;
+    }
+
+    .prod_project1_textbox {
+        order: ;
+        width: auto;
+    }
+
+    .prod_project1_img {
+        order: ;
+    }
+
+    .prod_project1_pphead {
+        font-size: 30px;
+    }
+
+    .prod_project1_ppunder {
+        font-size: 25px;
+    }
+
+    .prod_project1_pp3 {
+        display: block;
+        visibility: visible;
+        max-height: 245px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+}
