@@ -244,6 +244,72 @@ nav {
     color: rgb(0,136,169);
 }
 
+/* kode til nedre "meny" med epost, tlf, osv */
+
+.bottom_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: whitesmoke;
+    min-height: 15rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.mygithub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.contacts_h2 {
+    font-size: 25px;
+    margin: 1rem;
+}
+
+.contacts_p {
+    font-size: 16px;
+    margin: 0.7rem;
+}
+
+.mygithub_h2 {
+    font-size: 25px;
+    margin: 1rem;
+}
+
+.mygithub_img {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+
+    .contacts_h2 {
+        font-size: 20px;
+    }
+
+    .contacts_p {
+        font-size: 12px;
+    }
+
+    .mygithub_h2 {
+        font-size: 20px;
+    }
+
+    .mygithub_img {
+        width: auto;
+    }
+}
+
 /* generell kode til alle prosjektboksene på fagsidene prosjektbokser på fag sider */
 
 .projects {
@@ -617,16 +683,19 @@ nav {
 .prod_project1_pp1 {
     border: none;
     max-width: 1235px;
+    padding: 0 0 2rem 0;
 }
 
 .prod_project1_pp2 {
     display: none;
     visibility: hidden;
+    padding: 0 0 2rem 0;
 }
 
 .prod_project1_pp3 {
     display: none;
     visibility: hidden;
+    padding: 0 0 2rem 0;
 }
 
 @media (max-width: 1250px) {
