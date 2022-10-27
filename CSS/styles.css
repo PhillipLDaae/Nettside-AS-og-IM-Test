@@ -72,6 +72,45 @@ nav {
     color: rgb(0,136,169);
 }
 
+/* Koden til dropdown */
+
+.dropbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    padding: 10px 0 0 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    color: rgb(0,136,169);
+}
+
 /* endring til mobil*/
 
 @media (max-width: 600px) {
@@ -203,45 +242,6 @@ nav {
         font-size: 20px;
         text-align: center;
     }
-}
-
-/* Koden til dropdown */
-
-.dropbtn {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    padding: 10px 0 0 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: whitesmoke;
-    padding: 12px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {
-    color: rgb(0,136,169);
 }
 
 /* kode til nedre "meny" med epost, tlf, osv */
@@ -616,9 +616,9 @@ nav {
     }
 }
 
+/* egen kode til sidene til spesifikke prosjekter innenfor fagene, er universelle så blir nok gjenbrukt i andre prosjektsider */
 
-
-.prod_project1_info {
+.project_view {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -627,7 +627,7 @@ nav {
     background-color: rgb(32, 32, 32);
 }
 
-.prod_project1_img {
+.project_view_img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -635,7 +635,7 @@ nav {
     border-radius: 25px;
 }
 
-.prod_project1_textbox {
+.project_view_textbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -647,17 +647,31 @@ nav {
     margin: 1rem;
 }
 
-.prod_project1_head {
+.project_view_head {
     padding: 1rem;
     font-size: 32px;
     font-weight: bold;
 }
 
-.prod_project1_text {
+.project_view_text {
     margin: 2rem;
     font-size: 22px;
 }
 
+/* endring til mindre skjermstørrelse (bredden samsvarer med en @media jeg har gjort lenger nede */
+
+@media (max-width: 980px) {
+
+    .project_view {
+        flex-direction: column;
+    }
+
+    .project_view_textbox {
+        width: auto;
+    }
+}
+
+/* koden til presentasjonen på det første prosjektet i produksjon og historiefortelling, blir nok ikke brukt om igjen et annet sted */
 
 .prod_project1_ppbox {
     display: flex;
@@ -698,6 +712,8 @@ nav {
     padding: 0 0 2rem 0;
 }
 
+/* de neste to @media spesifiserer når presentasjonene skal bytte og derfor bli mindre for å tilpasse seg skjermstørrelsen */
+
 @media (max-width: 1250px) {
     .prod_project1_pp1 {
         visibility: hidden;
@@ -717,19 +733,6 @@ nav {
         visibility: hidden; 
     }
 
-    .prod_project1_info {
-        flex-direction: column;
-    }
-
-    .prod_project1_textbox {
-        order: ;
-        width: auto;
-    }
-
-    .prod_project1_img {
-        order: ;
-    }
-
     .prod_project1_pphead {
         font-size: 30px;
     }
@@ -743,8 +746,4 @@ nav {
         visibility: visible;
         max-height: 245px;
     }
-}
-
-@media (max-width: 600px) {
-    
 }
