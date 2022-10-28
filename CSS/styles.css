@@ -320,6 +320,7 @@ nav {
     flex-wrap: wrap;
     padding: 1.5rem 7%;
     background-image: url(/Bilder/Stock\ Plant.jpg);
+    background-size: cover;
 }
 
 .projects-textbox {
@@ -375,13 +376,11 @@ nav {
 
 .konsept-1 {
     background-image: url(/Bilder/Coding.jpg);
-    background-size: 1550px;
 }
 
 .konsept-2 {
     background-image: url(/Bilder/Stock\ Plant.jpg);
     align-items: flex-start;
-    background-size: auto;
 }
 
 .konsept-3 {
@@ -419,6 +418,7 @@ nav {
     padding: 0 7% 0 0;
     height: 50rem;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content-right-textbox {
@@ -454,6 +454,7 @@ nav {
     padding: 0 0 0 7%;
     height: 50rem;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content-left-textbox {
